@@ -1,0 +1,62 @@
+@layout('layouts.app')
+
+
+@section('content')
+<!-- Page Header -->
+    <header class="masthead">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>Sign Up</h1>
+              <span class="subheading">Create a new Account</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      @if(errors.length > 0)
+        <ul class="list-group">
+        @each(error in errors)
+        <li class="list-group-item text-danger">{{ error }}</li>
+        @endeach
+        </ul>
+      @endif
+      <form action="/users/register" method="POST">
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label id="username">Username</label>
+          <input type="text" id="username" name="username" value="{{ data.username || '' }}" placeholder="Username" class="form-control">
+          </div>
+        </div>
+          <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label id="email">Email</label>
+          <input type="email" id="email" name="email" value="{{ data.email || '' }}" placeholder="Email" class="form-control">
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label id="fullname">Full name</label>
+          <input type="text" id="fullname" name="fullname" value="{{ data.fullname || '' }}" placeholder="Full Name" class="form-control">
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="form-group floating-label-form-group controls">
+            <label id="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="password" class="form-control">
+          </div>
+        </div>
+        <div class="form-group my-4 text-center">
+          <button class="btn btn-primary">Sign-Up Now</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+@endsection

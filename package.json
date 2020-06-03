@@ -1,0 +1,36 @@
+{
+	"name": "codemaps-blog",
+	"version": "1.0.0",
+	"description": "A node.js blog application",
+	"main": "src/server.js",
+	"dependencies": {
+		"bcrypt": "^3.0.8",
+		"body-parser": "^1.19.0",
+		"cloudinary": "^1.21.0",
+		"connect-flash": "^0.1.1",
+		"connect-mongo": "^3.2.0",
+		"dotenv": "^8.2.0",
+		"edge.js": "^1.1.4",
+		"express": "^4.17.1",
+		"express-edge": "^2.0.2",
+		"express-fileupload": "^1.1.6",
+		"express-session": "^1.17.1",
+		"mongoose": "^5.9.13"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"start": "node src/server.js",
+		"dev": "nodemon src/server.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"Node.js",
+		"Express.js",
+		"Blog",
+		"cloudinary",
+		"mongoose",
+		"mongoDB"
+	],
+	"author": "Kater Akeren",
+	"license": "ISC"
+}
