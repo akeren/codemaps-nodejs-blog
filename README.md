@@ -15,7 +15,3 @@ This is a _Blog Application_ built using Node JS, Express JS, and MongoDB.
     -   Start the mongoDB server
     -   Type: "npm start" to start the application
     -   Finally, open any web browser and type: "localhost:4000/" to launch the application
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within the project, please send an e-mail to the address above or better still create a pull request. All security vulnerabilities will be promptly addressed and appreciated.
