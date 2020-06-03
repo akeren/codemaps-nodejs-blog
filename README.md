@@ -2,10 +2,6 @@
 
 This is a _Blog Application_ built using Node JS, Express JS, and MongoDB.
 
-## Demo Screenshoot
-
-> ![Home Page](/public/img/demo/HomePost.png) ![View Post](/public/img/demo/GetPost.png) ![Create a Post](/public/img/demo/POST.png) ![Login](/public/img/demo/Login.png)
-
 ## Server Requirement
 
 > Node JS version ^12.16.1. So, if you have been using Node JS version less than that, kindly upgrade before using the project.
