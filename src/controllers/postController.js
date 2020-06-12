@@ -15,7 +15,8 @@ exports.checkPostBody = (req, res, next) => {
 };
 
 exports.getPost = async (req, res) => {
-	const post = await Post.findById(req.params.id).populate('author');
+	const slug = req.params.id;
+	const post = await Post.findOne({ slug }).populate('author');
 	res.render('post', { post });
 };
 
