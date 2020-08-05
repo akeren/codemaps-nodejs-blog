@@ -13,7 +13,7 @@
 		"edge.js": "^1.1.4",
 		"express": "^4.17.1",
 		"express-edge": "^2.0.2",
-		"express-fileupload": "^1.1.6",
+		"express-fileupload": "^1.1.9",
 		"express-session": "^1.17.1",
 		"mongoose": "^5.9.13",
 		"slugify": "^1.4.0"
