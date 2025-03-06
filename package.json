@@ -15,7 +15,7 @@
 		"express-edge": "^2.0.2",
 		"express-fileupload": "^1.1.9",
 		"express-session": "^1.17.1",
-		"mongoose": "^5.13.20",
+		"mongoose": "^8.12.1",
 		"slugify": "^1.4.0"
 	},
 	"devDependencies": {},
